@@ -1,0 +1,607 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DecentDbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="DecentDbEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CashMemoes" EntityType="DecentDbModel.CashMemo" />
+    <EntitySet Name="CompanyLists" EntityType="DecentDbModel.CompanyList" />
+    <EntitySet Name="CostDetails" EntityType="DecentDbModel.CostDetail" />
+    <EntitySet Name="CustomerDaySells" EntityType="DecentDbModel.CustomerDaySell" />
+    <EntitySet Name="CustomerPaymentDetails" EntityType="DecentDbModel.CustomerPaymentDetail" />
+    <EntitySet Name="Customers" EntityType="DecentDbModel.Customer" />
+    <EntitySet Name="DayCosts" EntityType="DecentDbModel.DayCost" />
+    <EntitySet Name="DayIncomes" EntityType="DecentDbModel.DayIncome" />
+    <EntitySet Name="DayPayments" EntityType="DecentDbModel.DayPayment" />
+    <EntitySet Name="DaySells" EntityType="DecentDbModel.DaySell" />
+    <EntitySet Name="Departments" EntityType="DecentDbModel.Department" />
+    <EntitySet Name="PaymentDetails" EntityType="DecentDbModel.PaymentDetail" />
+    <EntitySet Name="ProductCategories" EntityType="DecentDbModel.ProductCategory" />
+    <EntitySet Name="Products" EntityType="DecentDbModel.Product" />
+    <EntitySet Name="SalesmanPayments" EntityType="DecentDbModel.SalesmanPayment" />
+    <EntitySet Name="Salesmen" EntityType="DecentDbModel.Salesman" />
+    <EntitySet Name="SellDetails" EntityType="DecentDbModel.SellDetail" />
+    <EntitySet Name="SellerNewProducts" EntityType="DecentDbModel.SellerNewProduct" />
+    <EntitySet Name="Sellers" EntityType="DecentDbModel.Seller" />
+    <EntitySet Name="TemporarySells" EntityType="DecentDbModel.TemporarySell" />
+    <EntitySet Name="UserInfoes" EntityType="DecentDbModel.UserInfo" />
+    <AssociationSet Name="FK_SellDetails_CashMemo" Association="DecentDbModel.FK_SellDetails_CashMemo">
+      <End Role="CashMemo" EntitySet="CashMemoes" />
+      <End Role="SellDetail" EntitySet="SellDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Customer_CustomerPaymentDetails" Association="DecentDbModel.FK_Customer_CustomerPaymentDetails">
+      <End Role="CustomerPaymentDetail" EntitySet="CustomerPaymentDetails" />
+      <End Role="Customer" EntitySet="Customers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_Customer" Association="DecentDbModel.FK_Product_Customer">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="Product" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DayCost_Salesman" Association="DecentDbModel.FK_DayCost_Salesman">
+      <End Role="Salesman" EntitySet="Salesmen" />
+      <End Role="DayCost" EntitySet="DayCosts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DayIncome_DayCost" Association="DecentDbModel.FK_DayIncome_DayCost">
+      <End Role="DayCost" EntitySet="DayCosts" />
+      <End Role="DayIncome" EntitySet="DayIncomes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Salesman_DayCost" Association="DecentDbModel.FK_Salesman_DayCost">
+      <End Role="DayCost" EntitySet="DayCosts" />
+      <End Role="Salesman" EntitySet="Salesmen" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DaySell_DayIncome" Association="DecentDbModel.FK_DaySell_DayIncome">
+      <End Role="DayIncome" EntitySet="DayIncomes" />
+      <End Role="DaySell" EntitySet="DaySells" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_DaySell" Association="DecentDbModel.FK_Product_DaySell">
+      <End Role="DaySell" EntitySet="DaySells" />
+      <End Role="Product" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserInfo_Department" Association="DecentDbModel.FK_UserInfo_Department">
+      <End Role="Department" EntitySet="Departments" />
+      <End Role="UserInfo" EntitySet="UserInfoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Seller_PaymentDetails" Association="DecentDbModel.FK_Seller_PaymentDetails">
+      <End Role="PaymentDetail" EntitySet="PaymentDetails" />
+      <End Role="Seller" EntitySet="Sellers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_ProductCategory" Association="DecentDbModel.FK_Product_ProductCategory">
+      <End Role="ProductCategory" EntitySet="ProductCategories" />
+      <End Role="Product" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SellDetails_ProductCategory" Association="DecentDbModel.FK_SellDetails_ProductCategory">
+      <End Role="ProductCategory" EntitySet="ProductCategories" />
+      <End Role="SellDetail" EntitySet="SellDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Seller_ProductCategory" Association="DecentDbModel.FK_Seller_ProductCategory">
+      <End Role="ProductCategory" EntitySet="ProductCategories" />
+      <End Role="SellerNewProduct" EntitySet="SellerNewProducts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TemporarySell_ProductCategory" Association="DecentDbModel.FK_TemporarySell_ProductCategory">
+      <End Role="ProductCategory" EntitySet="ProductCategories" />
+      <End Role="TemporarySell" EntitySet="TemporarySells" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_Salesman" Association="DecentDbModel.FK_Product_Salesman">
+      <End Role="Salesman" EntitySet="Salesmen" />
+      <End Role="Product" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_Seller" Association="DecentDbModel.FK_Product_Seller">
+      <End Role="Seller" EntitySet="Sellers" />
+      <End Role="Product" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_SellerNewProduct" Association="DecentDbModel.FK_Product_SellerNewProduct">
+      <End Role="SellerNewProduct" EntitySet="SellerNewProducts" />
+      <End Role="Product" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_TemporarySell" Association="DecentDbModel.FK_Product_TemporarySell">
+      <End Role="TemporarySell" EntitySet="TemporarySells" />
+      <End Role="Product" EntitySet="Products" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="CashMemo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Time" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="CustomerName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CustomerPhone" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Salesman" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="SellDetails" Relationship="DecentDbModel.FK_SellDetails_CashMemo" FromRole="CashMemo" ToRole="SellDetail" />
+  </EntityType>
+  <EntityType Name="CompanyList">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="CostDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Amount" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CustomerDaySell">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Time" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TotalPrice" Type="Double" Nullable="false" />
+    <Property Name="Payment" Type="Double" Nullable="false" />
+    <Property Name="Benifit" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CustomerPaymentDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CustomerName" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TotalDue" Type="Double" Nullable="false" />
+    <Property Name="Payment" Type="Double" Nullable="false" />
+    <NavigationProperty Name="Customers" Relationship="DecentDbModel.FK_Customer_CustomerPaymentDetails" FromRole="CustomerPaymentDetail" ToRole="Customer" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="TotalPrice" Type="Double" Nullable="false" />
+    <Property Name="Payment" Type="Double" Nullable="false" />
+    <Property Name="CustomerPaymentDetailsId" Type="Int32" />
+    <Property Name="Benifit" Type="Double" Nullable="false" />
+    <NavigationProperty Name="CustomerPaymentDetail" Relationship="DecentDbModel.FK_Customer_CustomerPaymentDetails" FromRole="Customer" ToRole="CustomerPaymentDetail" />
+    <NavigationProperty Name="Products" Relationship="DecentDbModel.FK_Product_Customer" FromRole="Customer" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="DayCost">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="CostAmount" Type="Double" Nullable="false" />
+    <Property Name="SalesmanId" Type="Int32" />
+    <NavigationProperty Name="Salesman" Relationship="DecentDbModel.FK_DayCost_Salesman" FromRole="DayCost" ToRole="Salesman" />
+    <NavigationProperty Name="DayIncomes" Relationship="DecentDbModel.FK_DayIncome_DayCost" FromRole="DayCost" ToRole="DayIncome" />
+    <NavigationProperty Name="Salesmen" Relationship="DecentDbModel.FK_Salesman_DayCost" FromRole="DayCost" ToRole="Salesman" />
+  </EntityType>
+  <EntityType Name="DayIncome">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Sell" Type="Double" Nullable="false" />
+    <Property Name="Cost" Type="Double" Nullable="false" />
+    <Property Name="Payment" Type="Double" Nullable="false" />
+    <Property Name="Benifit" Type="Double" Nullable="false" />
+    <Property Name="DayCostId" Type="Int32" />
+    <NavigationProperty Name="DayCost" Relationship="DecentDbModel.FK_DayIncome_DayCost" FromRole="DayIncome" ToRole="DayCost" />
+    <NavigationProperty Name="DaySells" Relationship="DecentDbModel.FK_DaySell_DayIncome" FromRole="DayIncome" ToRole="DaySell" />
+  </EntityType>
+  <EntityType Name="DayPayment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Amount" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DaySell">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Time" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ProductCategory" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Sell" Type="Double" Nullable="false" />
+    <Property Name="Amount" Type="Int32" Nullable="false" />
+    <Property Name="Salesman" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Benifit" Type="Double" Nullable="false" />
+    <Property Name="DayIncomeId" Type="Int32" />
+    <NavigationProperty Name="DayIncome" Relationship="DecentDbModel.FK_DaySell_DayIncome" FromRole="DaySell" ToRole="DayIncome" />
+    <NavigationProperty Name="Products" Relationship="DecentDbModel.FK_Product_DaySell" FromRole="DaySell" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="UserInfoes" Relationship="DecentDbModel.FK_UserInfo_Department" FromRole="Department" ToRole="UserInfo" />
+  </EntityType>
+  <EntityType Name="PaymentDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SellerName" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TotalDue" Type="Double" Nullable="false" />
+    <Property Name="Payment" Type="Double" Nullable="false" />
+    <NavigationProperty Name="Sellers" Relationship="DecentDbModel.FK_Seller_PaymentDetails" FromRole="PaymentDetail" ToRole="Seller" />
+  </EntityType>
+  <EntityType Name="ProductCategory">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Products" Relationship="DecentDbModel.FK_Product_ProductCategory" FromRole="ProductCategory" ToRole="Product" />
+    <NavigationProperty Name="SellDetails" Relationship="DecentDbModel.FK_SellDetails_ProductCategory" FromRole="ProductCategory" ToRole="SellDetail" />
+    <NavigationProperty Name="SellerNewProducts" Relationship="DecentDbModel.FK_Seller_ProductCategory" FromRole="ProductCategory" ToRole="SellerNewProduct" />
+    <NavigationProperty Name="TemporarySells" Relationship="DecentDbModel.FK_TemporarySell_ProductCategory" FromRole="ProductCategory" ToRole="TemporarySell" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="PriceRate" Type="Double" Nullable="false" />
+    <Property Name="Availability" Type="Int32" Nullable="false" />
+    <Property Name="ProductCategoryId" Type="Int32" Nullable="false" />
+    <Property Name="Benifit" Type="Double" Nullable="false" />
+    <Property Name="SalesmanId" Type="Int32" />
+    <Property Name="DaySellId" Type="Int32" />
+    <Property Name="SellerNewProductId" Type="Int32" />
+    <Property Name="SellerId" Type="Int32" Nullable="false" />
+    <Property Name="CustomerId" Type="Int32" />
+    <Property Name="TemporarySellId" Type="Int32" />
+    <NavigationProperty Name="Customer" Relationship="DecentDbModel.FK_Product_Customer" FromRole="Product" ToRole="Customer" />
+    <NavigationProperty Name="DaySell" Relationship="DecentDbModel.FK_Product_DaySell" FromRole="Product" ToRole="DaySell" />
+    <NavigationProperty Name="ProductCategory" Relationship="DecentDbModel.FK_Product_ProductCategory" FromRole="Product" ToRole="ProductCategory" />
+    <NavigationProperty Name="Salesman" Relationship="DecentDbModel.FK_Product_Salesman" FromRole="Product" ToRole="Salesman" />
+    <NavigationProperty Name="Seller" Relationship="DecentDbModel.FK_Product_Seller" FromRole="Product" ToRole="Seller" />
+    <NavigationProperty Name="SellerNewProduct" Relationship="DecentDbModel.FK_Product_SellerNewProduct" FromRole="Product" ToRole="SellerNewProduct" />
+    <NavigationProperty Name="TemporarySell" Relationship="DecentDbModel.FK_Product_TemporarySell" FromRole="Product" ToRole="TemporarySell" />
+  </EntityType>
+  <EntityType Name="SalesmanPayment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TotalDue" Type="Double" Nullable="false" />
+    <Property Name="Payment" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Salesman">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Salary" Type="Double" Nullable="false" />
+    <Property Name="PaySalary" Type="Double" Nullable="false" />
+    <Property Name="Phone" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Benifit" Type="Double" Nullable="false" />
+    <Property Name="DayCostId" Type="Int32" />
+    <NavigationProperty Name="DayCosts" Relationship="DecentDbModel.FK_DayCost_Salesman" FromRole="Salesman" ToRole="DayCost" />
+    <NavigationProperty Name="DayCost" Relationship="DecentDbModel.FK_Salesman_DayCost" FromRole="Salesman" ToRole="DayCost" />
+    <NavigationProperty Name="Products" Relationship="DecentDbModel.FK_Product_Salesman" FromRole="Salesman" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="SellDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Time" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Salesman" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Customer" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="CustomerPhone" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ProductName" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="ProductCategoryId" Type="Int32" Nullable="false" />
+    <Property Name="RealPriceRate" Type="Double" Nullable="false" />
+    <Property Name="SellPriceRate" Type="Double" Nullable="false" />
+    <Property Name="Amount" Type="Int32" Nullable="false" />
+    <Property Name="TotalPrice" Type="Double" Nullable="false" />
+    <Property Name="Benifit" Type="Double" Nullable="false" />
+    <Property Name="CashMemoId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CashMemo" Relationship="DecentDbModel.FK_SellDetails_CashMemo" FromRole="SellDetail" ToRole="CashMemo" />
+    <NavigationProperty Name="ProductCategory" Relationship="DecentDbModel.FK_SellDetails_ProductCategory" FromRole="SellDetail" ToRole="ProductCategory" />
+  </EntityType>
+  <EntityType Name="SellerNewProduct">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Time" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="ProductName" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="ProductCategoryId" Type="Int32" Nullable="false" />
+    <Property Name="ProductAmount" Type="Int32" Nullable="false" />
+    <Property Name="PriceRate" Type="Double" Nullable="false" />
+    <Property Name="TotalPrice" Type="Double" Nullable="false" />
+    <Property Name="Discount" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="AfterTotalPrice" Type="Double" Nullable="false" />
+    <Property Name="CarryingCost" Type="Double" Nullable="false" />
+    <Property Name="AfterPriceRate" Type="Double" Nullable="false" />
+    <NavigationProperty Name="ProductCategory" Relationship="DecentDbModel.FK_Seller_ProductCategory" FromRole="SellerNewProduct" ToRole="ProductCategory" />
+    <NavigationProperty Name="Products" Relationship="DecentDbModel.FK_Product_SellerNewProduct" FromRole="SellerNewProduct" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="Seller">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="TotalPrice" Type="Double" Nullable="false" />
+    <Property Name="Payment" Type="Double" Nullable="false" />
+    <Property Name="PaymentDetailsId" Type="Int32" />
+    <NavigationProperty Name="PaymentDetail" Relationship="DecentDbModel.FK_Seller_PaymentDetails" FromRole="Seller" ToRole="PaymentDetail" />
+    <NavigationProperty Name="Products" Relationship="DecentDbModel.FK_Product_Seller" FromRole="Seller" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="TemporarySell">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Count" Type="Int32" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="ProductCategoryId" Type="Int32" Nullable="false" />
+    <Property Name="RealPriceRate" Type="Double" Nullable="false" />
+    <Property Name="PriceRate" Type="Double" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="TotalPrice" Type="Double" Nullable="false" />
+    <Property Name="Benifit" Type="Double" Nullable="false" />
+    <Property Name="ProductId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ProductCategory" Relationship="DecentDbModel.FK_TemporarySell_ProductCategory" FromRole="TemporarySell" ToRole="ProductCategory" />
+    <NavigationProperty Name="Products" Relationship="DecentDbModel.FK_Product_TemporarySell" FromRole="TemporarySell" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="UserInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="OrgId" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Gender" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TypeId" Type="Int32" Nullable="false" />
+    <Property Name="StatusId" Type="Int32" Nullable="false" />
+    <Property Name="DepartmentId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Department" Relationship="DecentDbModel.FK_UserInfo_Department" FromRole="UserInfo" ToRole="Department" />
+  </EntityType>
+  <Association Name="FK_SellDetails_CashMemo">
+    <End Type="DecentDbModel.CashMemo" Role="CashMemo" Multiplicity="1" />
+    <End Type="DecentDbModel.SellDetail" Role="SellDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CashMemo">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="SellDetail">
+        <PropertyRef Name="CashMemoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Customer_CustomerPaymentDetails">
+    <End Type="DecentDbModel.CustomerPaymentDetail" Role="CustomerPaymentDetail" Multiplicity="0..1" />
+    <End Type="DecentDbModel.Customer" Role="Customer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CustomerPaymentDetail">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Customer">
+        <PropertyRef Name="CustomerPaymentDetailsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_Customer">
+    <End Type="DecentDbModel.Customer" Role="Customer" Multiplicity="0..1" />
+    <End Type="DecentDbModel.Product" Role="Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DayCost_Salesman">
+    <End Type="DecentDbModel.Salesman" Role="Salesman" Multiplicity="0..1" />
+    <End Type="DecentDbModel.DayCost" Role="DayCost" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Salesman">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="DayCost">
+        <PropertyRef Name="SalesmanId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DayIncome_DayCost">
+    <End Type="DecentDbModel.DayCost" Role="DayCost" Multiplicity="0..1" />
+    <End Type="DecentDbModel.DayIncome" Role="DayIncome" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DayCost">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="DayIncome">
+        <PropertyRef Name="DayCostId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Salesman_DayCost">
+    <End Type="DecentDbModel.DayCost" Role="DayCost" Multiplicity="0..1" />
+    <End Type="DecentDbModel.Salesman" Role="Salesman" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DayCost">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Salesman">
+        <PropertyRef Name="DayCostId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DaySell_DayIncome">
+    <End Type="DecentDbModel.DayIncome" Role="DayIncome" Multiplicity="0..1" />
+    <End Type="DecentDbModel.DaySell" Role="DaySell" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DayIncome">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="DaySell">
+        <PropertyRef Name="DayIncomeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_DaySell">
+    <End Type="DecentDbModel.DaySell" Role="DaySell" Multiplicity="0..1" />
+    <End Type="DecentDbModel.Product" Role="Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DaySell">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="DaySellId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserInfo_Department">
+    <End Type="DecentDbModel.Department" Role="Department" Multiplicity="1" />
+    <End Type="DecentDbModel.UserInfo" Role="UserInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UserInfo">
+        <PropertyRef Name="DepartmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Seller_PaymentDetails">
+    <End Type="DecentDbModel.PaymentDetail" Role="PaymentDetail" Multiplicity="0..1" />
+    <End Type="DecentDbModel.Seller" Role="Seller" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PaymentDetail">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Seller">
+        <PropertyRef Name="PaymentDetailsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_ProductCategory">
+    <End Type="DecentDbModel.ProductCategory" Role="ProductCategory" Multiplicity="1" />
+    <End Type="DecentDbModel.Product" Role="Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductCategory">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="ProductCategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SellDetails_ProductCategory">
+    <End Type="DecentDbModel.ProductCategory" Role="ProductCategory" Multiplicity="1" />
+    <End Type="DecentDbModel.SellDetail" Role="SellDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductCategory">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="SellDetail">
+        <PropertyRef Name="ProductCategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Seller_ProductCategory">
+    <End Type="DecentDbModel.ProductCategory" Role="ProductCategory" Multiplicity="1" />
+    <End Type="DecentDbModel.SellerNewProduct" Role="SellerNewProduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductCategory">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="SellerNewProduct">
+        <PropertyRef Name="ProductCategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TemporarySell_ProductCategory">
+    <End Type="DecentDbModel.ProductCategory" Role="ProductCategory" Multiplicity="1" />
+    <End Type="DecentDbModel.TemporarySell" Role="TemporarySell" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductCategory">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TemporarySell">
+        <PropertyRef Name="ProductCategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_Salesman">
+    <End Type="DecentDbModel.Salesman" Role="Salesman" Multiplicity="0..1" />
+    <End Type="DecentDbModel.Product" Role="Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Salesman">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="SalesmanId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_Seller">
+    <End Type="DecentDbModel.Seller" Role="Seller" Multiplicity="1" />
+    <End Type="DecentDbModel.Product" Role="Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Seller">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="SellerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_SellerNewProduct">
+    <End Type="DecentDbModel.SellerNewProduct" Role="SellerNewProduct" Multiplicity="0..1" />
+    <End Type="DecentDbModel.Product" Role="Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SellerNewProduct">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="SellerNewProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_TemporarySell">
+    <End Type="DecentDbModel.TemporarySell" Role="TemporarySell" Multiplicity="0..1" />
+    <End Type="DecentDbModel.Product" Role="Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TemporarySell">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="TemporarySellId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,16 @@
+C:\Users\USER\Documents\Visual Studio 2013\Projects\Decent.IMS\Decent.IMS.Framework\bin\Debug\Decent.IMS.Framework.dll
+C:\Users\USER\Documents\Visual Studio 2013\Projects\Decent.IMS\Decent.IMS.Framework\bin\Debug\Decent.IMS.Framework.pdb
+C:\Users\USER\Documents\Visual Studio 2013\Projects\Decent.IMS\Decent.IMS.Framework\obj\Debug\Decent.IMS.Framework.csprojResolveAssemblyReference.cache
+C:\Users\USER\Documents\Visual Studio 2013\Projects\Decent.IMS\Decent.IMS.Framework\obj\Debug\Decent.IMS.Framework.dll
+C:\Users\USER\Documents\Visual Studio 2013\Projects\Decent.IMS\Decent.IMS.Framework\obj\Debug\Decent.IMS.Framework.pdb
+F:\Decent.IMS\Decent.IMS.Framework\bin\Debug\Decent.IMS.Framework.dll
+F:\Decent.IMS\Decent.IMS.Framework\bin\Debug\Decent.IMS.Framework.pdb
+F:\Decent.IMS\Decent.IMS.Framework\obj\Debug\Decent.IMS.Framework.csprojAssemblyReference.cache
+F:\Decent.IMS\Decent.IMS.Framework\obj\Debug\Decent.IMS.Framework.csproj.CoreCompileInputs.cache
+F:\Decent.IMS\Decent.IMS.Framework\obj\Debug\Decent.IMS.Framework.dll
+F:\Decent.IMS\Decent.IMS.Framework\obj\Debug\Decent.IMS.Framework.pdb
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.Framework\bin\Debug\Decent.IMS.Framework.dll
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.Framework\bin\Debug\Decent.IMS.Framework.pdb
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.Framework\obj\Debug\Decent.IMS.Framework.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.Framework\obj\Debug\Decent.IMS.Framework.dll
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.Framework\obj\Debug\Decent.IMS.Framework.pdb

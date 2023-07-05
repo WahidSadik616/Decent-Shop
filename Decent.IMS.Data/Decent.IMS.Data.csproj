@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{89303699-5925-40E6-8632-C0E44988DE1C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Decent.IMS.Data</RootNamespace>
+    <AssemblyName>Decent.IMS.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CashMemo.cs">
+      <DependentUpon>DecentDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyList.cs">
+      <DependentUpon>DecentDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CostDetail.cs">
+      <DependentUpon>DecentDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs">
+      <DependentUpon>DecentDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerDaySell.cs">
+      <DependentUpon>DecentDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerPaymentDetail.cs">
+      <DependentUpon>DecentDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DayCost.cs">
+      <DependentUpon>DecentDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DayIncome.cs">
+      <DependentUpon>DecentDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DayIncome.Partial.cs" />
+    <Compile Include="DayPayment.cs">
+      <DependentUpon>DecentDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DaySell.cs">
+      <DependentUpon>DecentDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DecentDbContext.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DecentDbContext.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DecentDbContext.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DecentDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DecentDbContext.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DecentDbContext.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Department.cs">
+      <DependentUpon>DecentDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Memo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Memo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PaymentDetail.cs">
+      <DependentUpon>DecentDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs">
+      <DependentUpon>DecentDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductCategory.cs">
+      <DependentUpon>DecentDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Product.Partial.cs" />
+    <Compile Include="Salesman.cs">
+      <DependentUpon>DecentDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Salesman.Partial.cs" />
+    <Compile Include="SalesmanPayment.cs">
+      <DependentUpon>DecentDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SellDetail.cs">
+      <DependentUpon>DecentDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Seller.cs">
+      <DependentUpon>DecentDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SellerNewProduct.cs">
+      <DependentUpon>DecentDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TemporarySell.cs">
+      <DependentUpon>DecentDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TemporarySell.Partial.cs" />
+    <Compile Include="SellerNewProduct.Partial.cs" />
+    <Compile Include="Customer.Partial.cs" />
+    <Compile Include="SupplierPaymentdetails.Partial.cs" />
+    <Compile Include="Seller.Partial.cs" />
+    <Compile Include="SellDetails.Partial.cs" />
+    <Compile Include="CustomerPaymentDetails.Partial.cs" />
+    <Compile Include="CustomerDaySell.Partial.cs" />
+    <Compile Include="SalesmanPayment.Partial.cs" />
+    <Compile Include="UserInfo.cs">
+      <DependentUpon>DecentDbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfo.Partial.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="DecentDbContext.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DecentDbContext.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="App.Config" />
+    <None Include="DecentDbContext.edmx.diagram">
+      <DependentUpon>DecentDbContext.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Memo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Memo.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DecentDbContext.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DecentDbContext.edmx</DependentUpon>
+      <LastGenOutput>DecentDbContext.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DecentDbContext.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DecentDbContext.edmx</DependentUpon>
+      <LastGenOutput>DecentDbContext.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

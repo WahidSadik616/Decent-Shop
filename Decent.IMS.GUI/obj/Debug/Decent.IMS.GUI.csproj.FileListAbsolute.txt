@@ -1,0 +1,252 @@
+C:\Users\USER\Documents\Visual Studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\bin\Debug\Decent.IMS.GUI.exe.config
+C:\Users\USER\Documents\Visual Studio 2013\Projects\Decent.IMS\Decent.IMS.Framework\obj\Debug\Decent.IMS.GUI.exe
+C:\Users\USER\Documents\Visual Studio 2013\Projects\Decent.IMS\Decent.IMS.Framework\obj\Debug\Decent.IMS.GUI.pdb
+C:\Users\USER\Documents\Visual Studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.exe
+C:\Users\USER\Documents\Visual Studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.pdb
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\bin\Debug\Decent.IMS.GUI.exe.manifest
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\bin\Debug\Decent.IMS.GUI.application
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\bin\Debug\Decent.IMS.GUI.exe
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\bin\Debug\Decent.IMS.GUI.pdb
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\bin\Debug\Decent.IMS.BL.dll
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\bin\Debug\Decent.IMS.Data.dll
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\bin\Debug\Decent.IMS.Framework.dll
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\bin\Debug\EntityFramework.dll
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\bin\Debug\MetroFramework.Design.dll
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\bin\Debug\MetroFramework.dll
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\bin\Debug\Decent.IMS.BL.pdb
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\bin\Debug\Decent.IMS.Data.pdb
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\bin\Debug\Decent.IMS.Framework.pdb
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\bin\Debug\EntityFramework.xml
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.csprojResolveAssemblyReference.cache
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.AddProductManager.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.AdminForm.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.CustomerDaySellManager.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.CustomerManager.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.CustomerPaymentDetailsManager.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.DayCostManager.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.DayIncomeManager.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.DayPaymentManager.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.DaySellManager.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.DepartmentManager.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.EndDayDateTimeForm.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.LoginForm.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherCostForm.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserAddProductManager.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserDayCostManager.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.PaymentTypeForm.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.ProductCategoryManager.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.ProductDetailForm.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.ProductManager.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.Properties.Resources.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.RegistrationForm.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.SalesmanManager.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.SalesmanPaymentManager.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.SellDetailsManager.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.SellerManager.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.SellerNewProductManager.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.TemporarySellManager.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.UserDetailForm.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.UserInfoManager.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.csproj.GenerateResource.Cache
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.exe.manifest
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.application
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.FormPrint.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.CashMemoManager.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserReturnProductManager.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.CompanyListsManager.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserProductForm.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserOthersForm.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserSellProductManager.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserReturnForm.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserMenuForm.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserHomeForm.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserCostManager.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserCustomerPaymentForm.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserPaymentAfterBuyForm.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.SupplierPaymentManager.resources
+C:\Users\USER\documents\visual studio 2013\Projects\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserSupplierPaymentForm.resources
+F:\Decent.IMS\Decent.IMS.GUI\bin\Debug\Decent.IMS.GUI.exe.config
+F:\Decent.IMS\Decent.IMS.GUI\bin\Debug\Decent.IMS.GUI.exe.manifest
+F:\Decent.IMS\Decent.IMS.GUI\bin\Debug\Decent.IMS.GUI.application
+F:\Decent.IMS\Decent.IMS.GUI\bin\Debug\Decent.IMS.GUI.exe
+F:\Decent.IMS\Decent.IMS.GUI\bin\Debug\Decent.IMS.GUI.pdb
+F:\Decent.IMS\Decent.IMS.GUI\bin\Debug\AxShockwaveFlashObjects.dll
+F:\Decent.IMS\Decent.IMS.GUI\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+F:\Decent.IMS\Decent.IMS.GUI\bin\Debug\CrystalDecisions.ReportSource.dll
+F:\Decent.IMS\Decent.IMS.GUI\bin\Debug\CrystalDecisions.Shared.dll
+F:\Decent.IMS\Decent.IMS.GUI\bin\Debug\CrystalDecisions.Windows.Forms.dll
+F:\Decent.IMS\Decent.IMS.GUI\bin\Debug\Decent.IMS.BL.dll
+F:\Decent.IMS\Decent.IMS.GUI\bin\Debug\Decent.IMS.Data.dll
+F:\Decent.IMS\Decent.IMS.GUI\bin\Debug\Decent.IMS.Framework.dll
+F:\Decent.IMS\Decent.IMS.GUI\bin\Debug\EntityFramework.dll
+F:\Decent.IMS\Decent.IMS.GUI\bin\Debug\EntityFramework.SqlServer.dll
+F:\Decent.IMS\Decent.IMS.GUI\bin\Debug\MetroFramework.Design.dll
+F:\Decent.IMS\Decent.IMS.GUI\bin\Debug\MetroFramework.dll
+F:\Decent.IMS\Decent.IMS.GUI\bin\Debug\MetroFramework.Fonts.dll
+F:\Decent.IMS\Decent.IMS.GUI\bin\Debug\ShockwaveFlashObjects.dll
+F:\Decent.IMS\Decent.IMS.GUI\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+F:\Decent.IMS\Decent.IMS.GUI\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+F:\Decent.IMS\Decent.IMS.GUI\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+F:\Decent.IMS\Decent.IMS.GUI\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+F:\Decent.IMS\Decent.IMS.GUI\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+F:\Decent.IMS\Decent.IMS.GUI\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+F:\Decent.IMS\Decent.IMS.GUI\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+F:\Decent.IMS\Decent.IMS.GUI\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+F:\Decent.IMS\Decent.IMS.GUI\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+F:\Decent.IMS\Decent.IMS.GUI\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+F:\Decent.IMS\Decent.IMS.GUI\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+F:\Decent.IMS\Decent.IMS.GUI\bin\Debug\stdole.dll
+F:\Decent.IMS\Decent.IMS.GUI\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+F:\Decent.IMS\Decent.IMS.GUI\bin\Debug\Decent.IMS.BL.pdb
+F:\Decent.IMS\Decent.IMS.GUI\bin\Debug\Decent.IMS.BL.dll.config
+F:\Decent.IMS\Decent.IMS.GUI\bin\Debug\Decent.IMS.Data.pdb
+F:\Decent.IMS\Decent.IMS.GUI\bin\Debug\Decent.IMS.Data.dll.config
+F:\Decent.IMS\Decent.IMS.GUI\bin\Debug\Decent.IMS.Framework.pdb
+F:\Decent.IMS\Decent.IMS.GUI\bin\Debug\EntityFramework.xml
+F:\Decent.IMS\Decent.IMS.GUI\bin\Debug\EntityFramework.SqlServer.xml
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.csprojAssemblyReference.cache
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.AddProductManager.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.AdminForm.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.CashMemoManager.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.CompanyListsManager.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserCostManager.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.CustomerDaySellManager.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.CustomerManager.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserCustomerPaymentForm.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.CustomerPaymentDetailsManager.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.DayCostManager.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.DayIncomeManager.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.DayPaymentManager.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.DaySellManager.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.DepartmentManager.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.EndDayDateTimeForm.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.FormPrint.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.LoginForm.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherCostForm.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserAddProductManager.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserDayCostManager.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserHomeForm.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserMenuForm.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserOthersForm.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserReturnForm.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserSellProductManager.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserProductForm.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserReturnProductManager.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserPaymentAfterBuyForm.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.SupplierPaymentManager.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserSupplierPaymentForm.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.PaymentTypeForm.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.ProductCategoryManager.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.ProductDetailForm.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.ProductManager.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.Properties.Resources.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.RegistrationForm.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.SalesmanManager.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.SalesmanPaymentManager.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.SellDetailsManager.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.SellerManager.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.TemporarySellManager.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.UserDetailForm.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.UserInfoManager.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.csproj.GenerateResource.cache
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.csproj.CoreCompileInputs.cache
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.exe.manifest
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.application
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.csproj.CopyComplete
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.exe
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.pdb
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.ConnectionTestForm.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserSellerNewProductManager.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.SellerNewProductManager.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserSellDetailsManager.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.AdminCostManager.resources
+F:\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserSupplierPaymentDetailsManager.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\bin\Debug\Decent.IMS.GUI.exe.config
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\bin\Debug\Decent.IMS.GUI.exe.manifest
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\bin\Debug\Decent.IMS.GUI.application
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\bin\Debug\Decent.IMS.GUI.exe
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\bin\Debug\Decent.IMS.GUI.pdb
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\bin\Debug\Decent.IMS.BL.dll
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\bin\Debug\Decent.IMS.Data.dll
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\bin\Debug\Decent.IMS.Framework.dll
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\bin\Debug\EntityFramework.dll
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\bin\Debug\MetroFramework.Design.dll
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\bin\Debug\MetroFramework.dll
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\bin\Debug\Decent.IMS.BL.pdb
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\bin\Debug\Decent.IMS.Data.pdb
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\bin\Debug\Decent.IMS.Framework.pdb
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\bin\Debug\EntityFramework.xml
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.AddProductManager.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.AdminCostManager.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.AdminForm.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.CashMemoManager.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.CompanyListsManager.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.ConnectionTestForm.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserCostManager.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.CustomerDaySellManager.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.CustomerManager.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserCustomerPaymentForm.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.CustomerPaymentDetailsManager.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.DayCostManager.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.DayIncomeManager.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.DayPaymentManager.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.DaySellManager.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.DepartmentManager.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.EndDayDateTimeForm.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.FormPrint.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.LoginForm.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherCostForm.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserAddProductManager.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserDayCostManager.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserHomeForm.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserMenuForm.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserOthersForm.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserReturnForm.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserSellDetailsManager.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserSellProductManager.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserProductForm.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserReturnProductManager.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserPaymentAfterBuyForm.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserSupplierPaymentDetailsManager.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.SellerNewProductManager.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.SupplierPaymentManager.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserSupplierPaymentForm.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.PaymentTypeForm.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.ProductCategoryManager.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.ProductDetailForm.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.ProductManager.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.Properties.Resources.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.RegistrationForm.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.SalesmanManager.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.SalesmanPaymentManager.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.SellDetailsManager.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.SellerManager.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.OtherUserSellerNewProductManager.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.TemporarySellManager.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.UserDetailForm.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.UserInfoManager.resources
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.csproj.GenerateResource.Cache
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.exe.manifest
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.application
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.exe
+C:\Users\DELL\Downloads\DecentDesktop\Decent.IMS\Decent.IMS.GUI\obj\Debug\Decent.IMS.GUI.pdb

@@ -1,0 +1,606 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DecentDbModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CashMemo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Time" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CustomerName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CustomerPhone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Salesman" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Phone" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="SellDetails" Relationship="Self.FK_SellDetails_CashMemo" FromRole="CashMemoes" ToRole="SellDetails" />
+  </EntityType>
+  <EntityType Name="CompanyList">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CostDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Name" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Amount" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CustomerDaySell">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Time" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TotalPrice" Type="Double" Nullable="false" />
+    <Property Name="Payment" Type="Double" Nullable="false" />
+    <Property Name="Benifit" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CustomerPaymentDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CustomerName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TotalDue" Type="Double" Nullable="false" />
+    <Property Name="Payment" Type="Double" Nullable="false" />
+    <NavigationProperty Name="Customers" Relationship="Self.FK_Customer_CustomerPaymentDetails" FromRole="CustomerPaymentDetails" ToRole="Customers" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Address" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="TotalPrice" Type="Double" Nullable="false" />
+    <Property Name="Payment" Type="Double" Nullable="false" />
+    <Property Name="CustomerPaymentDetailsId" Type="Int32" />
+    <Property Name="Benifit" Type="Double" Nullable="false" />
+    <NavigationProperty Name="CustomerPaymentDetail" Relationship="Self.FK_Customer_CustomerPaymentDetails" FromRole="Customers" ToRole="CustomerPaymentDetails" />
+    <NavigationProperty Name="Products" Relationship="Self.FK_Product_Customer" FromRole="Customers" ToRole="Products" />
+  </EntityType>
+  <EntityType Name="DayCost">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CostAmount" Type="Double" Nullable="false" />
+    <Property Name="SalesmanId" Type="Int32" />
+    <NavigationProperty Name="Salesman" Relationship="Self.FK_DayCost_Salesman" FromRole="DayCosts" ToRole="Salesmen" />
+    <NavigationProperty Name="DayIncomes" Relationship="Self.FK_DayIncome_DayCost" FromRole="DayCosts" ToRole="DayIncomes" />
+    <NavigationProperty Name="Salesmen" Relationship="Self.FK_Salesman_DayCost" FromRole="DayCosts" ToRole="Salesmen" />
+  </EntityType>
+  <EntityType Name="DayIncome">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Sell" Type="Double" Nullable="false" />
+    <Property Name="Cost" Type="Double" Nullable="false" />
+    <Property Name="Payment" Type="Double" Nullable="false" />
+    <Property Name="Benifit" Type="Double" Nullable="false" />
+    <Property Name="DayCostId" Type="Int32" />
+    <NavigationProperty Name="DayCost" Relationship="Self.FK_DayIncome_DayCost" FromRole="DayIncomes" ToRole="DayCosts" />
+    <NavigationProperty Name="DaySells" Relationship="Self.FK_DaySell_DayIncome" FromRole="DayIncomes" ToRole="DaySells" />
+  </EntityType>
+  <EntityType Name="DayPayment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Amount" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DaySell">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Time" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ProductCategory" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Sell" Type="Double" Nullable="false" />
+    <Property Name="Amount" Type="Int32" Nullable="false" />
+    <Property Name="Salesman" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Benifit" Type="Double" Nullable="false" />
+    <Property Name="DayIncomeId" Type="Int32" />
+    <NavigationProperty Name="DayIncome" Relationship="Self.FK_DaySell_DayIncome" FromRole="DaySells" ToRole="DayIncomes" />
+    <NavigationProperty Name="Products" Relationship="Self.FK_Product_DaySell" FromRole="DaySells" ToRole="Products" />
+  </EntityType>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="UserInfoes" Relationship="Self.FK_UserInfo_Department" FromRole="Departments" ToRole="UserInfoes" />
+  </EntityType>
+  <EntityType Name="PaymentDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SellerName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TotalDue" Type="Double" Nullable="false" />
+    <Property Name="Payment" Type="Double" Nullable="false" />
+    <NavigationProperty Name="Sellers" Relationship="Self.FK_Seller_PaymentDetails" FromRole="PaymentDetails" ToRole="Sellers" />
+  </EntityType>
+  <EntityType Name="ProductCategory">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Products" Relationship="Self.FK_Product_ProductCategory" FromRole="ProductCategories" ToRole="Products" />
+    <NavigationProperty Name="SellDetails" Relationship="Self.FK_SellDetails_ProductCategory" FromRole="ProductCategories" ToRole="SellDetails" />
+    <NavigationProperty Name="SellerNewProducts" Relationship="Self.FK_Seller_ProductCategory" FromRole="ProductCategories" ToRole="SellerNewProducts" />
+    <NavigationProperty Name="TemporarySells" Relationship="Self.FK_TemporarySell_ProductCategory" FromRole="ProductCategories" ToRole="TemporarySells" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PriceRate" Type="Double" Nullable="false" />
+    <Property Name="Availability" Type="Int32" Nullable="false" />
+    <Property Name="ProductCategoryId" Type="Int32" Nullable="false" />
+    <Property Name="Benifit" Type="Double" Nullable="false" />
+    <Property Name="SalesmanId" Type="Int32" />
+    <Property Name="DaySellId" Type="Int32" />
+    <Property Name="SellerNewProductId" Type="Int32" />
+    <Property Name="SellerId" Type="Int32" Nullable="false" />
+    <Property Name="CustomerId" Type="Int32" />
+    <Property Name="TemporarySellId" Type="Int32" />
+    <NavigationProperty Name="Customer" Relationship="Self.FK_Product_Customer" FromRole="Products" ToRole="Customers" />
+    <NavigationProperty Name="DaySell" Relationship="Self.FK_Product_DaySell" FromRole="Products" ToRole="DaySells" />
+    <NavigationProperty Name="ProductCategory" Relationship="Self.FK_Product_ProductCategory" FromRole="Products" ToRole="ProductCategories" />
+    <NavigationProperty Name="Salesman" Relationship="Self.FK_Product_Salesman" FromRole="Products" ToRole="Salesmen" />
+    <NavigationProperty Name="Seller" Relationship="Self.FK_Product_Seller" FromRole="Products" ToRole="Sellers" />
+    <NavigationProperty Name="SellerNewProduct" Relationship="Self.FK_Product_SellerNewProduct" FromRole="Products" ToRole="SellerNewProducts" />
+    <NavigationProperty Name="TemporarySell" Relationship="Self.FK_Product_TemporarySell" FromRole="Products" ToRole="TemporarySells" />
+  </EntityType>
+  <EntityType Name="SalesmanPayment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Name" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TotalDue" Type="Double" Nullable="false" />
+    <Property Name="Payment" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Salesman">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Salary" Type="Double" Nullable="false" />
+    <Property Name="PaySalary" Type="Double" Nullable="false" />
+    <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Benifit" Type="Double" Nullable="false" />
+    <Property Name="DayCostId" Type="Int32" />
+    <NavigationProperty Name="DayCosts" Relationship="Self.FK_DayCost_Salesman" FromRole="Salesmen" ToRole="DayCosts" />
+    <NavigationProperty Name="DayCost" Relationship="Self.FK_Salesman_DayCost" FromRole="Salesmen" ToRole="DayCosts" />
+    <NavigationProperty Name="Products" Relationship="Self.FK_Product_Salesman" FromRole="Salesmen" ToRole="Products" />
+  </EntityType>
+  <EntityType Name="SellDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Time" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Salesman" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Customer" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CustomerPhone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ProductName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ProductCategoryId" Type="Int32" Nullable="false" />
+    <Property Name="RealPriceRate" Type="Double" Nullable="false" />
+    <Property Name="SellPriceRate" Type="Double" Nullable="false" />
+    <Property Name="Amount" Type="Int32" Nullable="false" />
+    <Property Name="TotalPrice" Type="Double" Nullable="false" />
+    <Property Name="Benifit" Type="Double" Nullable="false" />
+    <Property Name="CashMemoId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CashMemo" Relationship="Self.FK_SellDetails_CashMemo" FromRole="SellDetails" ToRole="CashMemoes" />
+    <NavigationProperty Name="ProductCategory" Relationship="Self.FK_SellDetails_ProductCategory" FromRole="SellDetails" ToRole="ProductCategories" />
+  </EntityType>
+  <EntityType Name="SellerNewProduct">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Name" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ProductName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ProductCategoryId" Type="Int32" Nullable="false" />
+    <Property Name="ProductAmount" Type="Int32" Nullable="false" />
+    <Property Name="PriceRate" Type="Double" Nullable="false" />
+    <Property Name="TotalPrice" Type="Double" Nullable="false" />
+    <Property Name="Discount" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AfterTotalPrice" Type="Double" Nullable="false" />
+    <Property Name="CarryingCost" Type="Double" Nullable="false" />
+    <Property Name="AfterPriceRate" Type="Double" Nullable="false" />
+    <NavigationProperty Name="ProductCategory" Relationship="Self.FK_Seller_ProductCategory" FromRole="SellerNewProducts" ToRole="ProductCategories" />
+    <NavigationProperty Name="Products" Relationship="Self.FK_Product_SellerNewProduct" FromRole="SellerNewProducts" ToRole="Products" />
+  </EntityType>
+  <EntityType Name="Seller">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Address" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="TotalPrice" Type="Double" Nullable="false" />
+    <Property Name="Payment" Type="Double" Nullable="false" />
+    <Property Name="PaymentDetailsId" Type="Int32" />
+    <NavigationProperty Name="PaymentDetail" Relationship="Self.FK_Seller_PaymentDetails" FromRole="Sellers" ToRole="PaymentDetails" />
+    <NavigationProperty Name="Products" Relationship="Self.FK_Product_Seller" FromRole="Sellers" ToRole="Products" />
+  </EntityType>
+  <EntityType Name="TemporarySell">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Count" Type="Int32" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Name" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ProductCategoryId" Type="Int32" Nullable="false" />
+    <Property Name="RealPriceRate" Type="Double" Nullable="false" />
+    <Property Name="PriceRate" Type="Double" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="TotalPrice" Type="Double" Nullable="false" />
+    <Property Name="Benifit" Type="Double" Nullable="false" />
+    <Property Name="ProductId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ProductCategory" Relationship="Self.FK_TemporarySell_ProductCategory" FromRole="TemporarySells" ToRole="ProductCategories" />
+    <NavigationProperty Name="Products" Relationship="Self.FK_Product_TemporarySell" FromRole="TemporarySells" ToRole="Products" />
+  </EntityType>
+  <EntityType Name="UserInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="OrgId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Gender" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TypeId" Type="Int32" Nullable="false" />
+    <Property Name="StatusId" Type="Int32" Nullable="false" />
+    <Property Name="DepartmentId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Department" Relationship="Self.FK_UserInfo_Department" FromRole="UserInfoes" ToRole="Departments" />
+  </EntityType>
+  <Association Name="FK_SellDetails_CashMemo">
+    <End Role="CashMemoes" Type="Self.CashMemo" Multiplicity="1" />
+    <End Role="SellDetails" Type="Self.SellDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CashMemoes">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="SellDetails">
+        <PropertyRef Name="CashMemoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Customer_CustomerPaymentDetails">
+    <End Role="CustomerPaymentDetails" Type="Self.CustomerPaymentDetail" Multiplicity="0..1" />
+    <End Role="Customers" Type="Self.Customer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CustomerPaymentDetails">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Customers">
+        <PropertyRef Name="CustomerPaymentDetailsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_Customer">
+    <End Role="Customers" Type="Self.Customer" Multiplicity="0..1" />
+    <End Role="Products" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customers">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DayCost_Salesman">
+    <End Role="Salesmen" Type="Self.Salesman" Multiplicity="0..1" />
+    <End Role="DayCosts" Type="Self.DayCost" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Salesmen">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="DayCosts">
+        <PropertyRef Name="SalesmanId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DayIncome_DayCost">
+    <End Role="DayCosts" Type="Self.DayCost" Multiplicity="0..1" />
+    <End Role="DayIncomes" Type="Self.DayIncome" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DayCosts">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="DayIncomes">
+        <PropertyRef Name="DayCostId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Salesman_DayCost">
+    <End Role="DayCosts" Type="Self.DayCost" Multiplicity="0..1" />
+    <End Role="Salesmen" Type="Self.Salesman" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DayCosts">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Salesmen">
+        <PropertyRef Name="DayCostId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DaySell_DayIncome">
+    <End Role="DayIncomes" Type="Self.DayIncome" Multiplicity="0..1" />
+    <End Role="DaySells" Type="Self.DaySell" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DayIncomes">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="DaySells">
+        <PropertyRef Name="DayIncomeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_DaySell">
+    <End Role="DaySells" Type="Self.DaySell" Multiplicity="0..1" />
+    <End Role="Products" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DaySells">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="DaySellId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserInfo_Department">
+    <End Role="Departments" Type="Self.Department" Multiplicity="1" />
+    <End Role="UserInfoes" Type="Self.UserInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departments">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UserInfoes">
+        <PropertyRef Name="DepartmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Seller_PaymentDetails">
+    <End Role="PaymentDetails" Type="Self.PaymentDetail" Multiplicity="0..1" />
+    <End Role="Sellers" Type="Self.Seller" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PaymentDetails">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Sellers">
+        <PropertyRef Name="PaymentDetailsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_ProductCategory">
+    <End Role="ProductCategories" Type="Self.ProductCategory" Multiplicity="1" />
+    <End Role="Products" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductCategories">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="ProductCategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SellDetails_ProductCategory">
+    <End Role="ProductCategories" Type="Self.ProductCategory" Multiplicity="1" />
+    <End Role="SellDetails" Type="Self.SellDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductCategories">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="SellDetails">
+        <PropertyRef Name="ProductCategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Seller_ProductCategory">
+    <End Role="ProductCategories" Type="Self.ProductCategory" Multiplicity="1" />
+    <End Role="SellerNewProducts" Type="Self.SellerNewProduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductCategories">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="SellerNewProducts">
+        <PropertyRef Name="ProductCategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TemporarySell_ProductCategory">
+    <End Role="ProductCategories" Type="Self.ProductCategory" Multiplicity="1" />
+    <End Role="TemporarySells" Type="Self.TemporarySell" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductCategories">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TemporarySells">
+        <PropertyRef Name="ProductCategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_Salesman">
+    <End Role="Salesmen" Type="Self.Salesman" Multiplicity="0..1" />
+    <End Role="Products" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Salesmen">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="SalesmanId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_Seller">
+    <End Role="Sellers" Type="Self.Seller" Multiplicity="1" />
+    <End Role="Products" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sellers">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="SellerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_SellerNewProduct">
+    <End Role="SellerNewProducts" Type="Self.SellerNewProduct" Multiplicity="0..1" />
+    <End Role="Products" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SellerNewProducts">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="SellerNewProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_TemporarySell">
+    <End Role="TemporarySells" Type="Self.TemporarySell" Multiplicity="0..1" />
+    <End Role="Products" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TemporarySells">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="TemporarySellId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DecentDbEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CashMemoes" EntityType="Self.CashMemo" />
+    <EntitySet Name="CompanyLists" EntityType="Self.CompanyList" />
+    <EntitySet Name="CostDetails" EntityType="Self.CostDetail" />
+    <EntitySet Name="CustomerDaySells" EntityType="Self.CustomerDaySell" />
+    <EntitySet Name="CustomerPaymentDetails" EntityType="Self.CustomerPaymentDetail" />
+    <EntitySet Name="Customers" EntityType="Self.Customer" />
+    <EntitySet Name="DayCosts" EntityType="Self.DayCost" />
+    <EntitySet Name="DayIncomes" EntityType="Self.DayIncome" />
+    <EntitySet Name="DayPayments" EntityType="Self.DayPayment" />
+    <EntitySet Name="DaySells" EntityType="Self.DaySell" />
+    <EntitySet Name="Departments" EntityType="Self.Department" />
+    <EntitySet Name="PaymentDetails" EntityType="Self.PaymentDetail" />
+    <EntitySet Name="ProductCategories" EntityType="Self.ProductCategory" />
+    <EntitySet Name="Products" EntityType="Self.Product" />
+    <EntitySet Name="SalesmanPayments" EntityType="Self.SalesmanPayment" />
+    <EntitySet Name="Salesmen" EntityType="Self.Salesman" />
+    <EntitySet Name="SellDetails" EntityType="Self.SellDetail" />
+    <EntitySet Name="SellerNewProducts" EntityType="Self.SellerNewProduct" />
+    <EntitySet Name="Sellers" EntityType="Self.Seller" />
+    <EntitySet Name="TemporarySells" EntityType="Self.TemporarySell" />
+    <EntitySet Name="UserInfoes" EntityType="Self.UserInfo" />
+    <AssociationSet Name="FK_SellDetails_CashMemo" Association="Self.FK_SellDetails_CashMemo">
+      <End Role="CashMemoes" EntitySet="CashMemoes" />
+      <End Role="SellDetails" EntitySet="SellDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Customer_CustomerPaymentDetails" Association="Self.FK_Customer_CustomerPaymentDetails">
+      <End Role="CustomerPaymentDetails" EntitySet="CustomerPaymentDetails" />
+      <End Role="Customers" EntitySet="Customers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_Customer" Association="Self.FK_Product_Customer">
+      <End Role="Customers" EntitySet="Customers" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DayCost_Salesman" Association="Self.FK_DayCost_Salesman">
+      <End Role="Salesmen" EntitySet="Salesmen" />
+      <End Role="DayCosts" EntitySet="DayCosts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DayIncome_DayCost" Association="Self.FK_DayIncome_DayCost">
+      <End Role="DayCosts" EntitySet="DayCosts" />
+      <End Role="DayIncomes" EntitySet="DayIncomes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Salesman_DayCost" Association="Self.FK_Salesman_DayCost">
+      <End Role="DayCosts" EntitySet="DayCosts" />
+      <End Role="Salesmen" EntitySet="Salesmen" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DaySell_DayIncome" Association="Self.FK_DaySell_DayIncome">
+      <End Role="DayIncomes" EntitySet="DayIncomes" />
+      <End Role="DaySells" EntitySet="DaySells" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_DaySell" Association="Self.FK_Product_DaySell">
+      <End Role="DaySells" EntitySet="DaySells" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserInfo_Department" Association="Self.FK_UserInfo_Department">
+      <End Role="Departments" EntitySet="Departments" />
+      <End Role="UserInfoes" EntitySet="UserInfoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Seller_PaymentDetails" Association="Self.FK_Seller_PaymentDetails">
+      <End Role="PaymentDetails" EntitySet="PaymentDetails" />
+      <End Role="Sellers" EntitySet="Sellers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_ProductCategory" Association="Self.FK_Product_ProductCategory">
+      <End Role="ProductCategories" EntitySet="ProductCategories" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SellDetails_ProductCategory" Association="Self.FK_SellDetails_ProductCategory">
+      <End Role="ProductCategories" EntitySet="ProductCategories" />
+      <End Role="SellDetails" EntitySet="SellDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Seller_ProductCategory" Association="Self.FK_Seller_ProductCategory">
+      <End Role="ProductCategories" EntitySet="ProductCategories" />
+      <End Role="SellerNewProducts" EntitySet="SellerNewProducts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TemporarySell_ProductCategory" Association="Self.FK_TemporarySell_ProductCategory">
+      <End Role="ProductCategories" EntitySet="ProductCategories" />
+      <End Role="TemporarySells" EntitySet="TemporarySells" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_Salesman" Association="Self.FK_Product_Salesman">
+      <End Role="Salesmen" EntitySet="Salesmen" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_Seller" Association="Self.FK_Product_Seller">
+      <End Role="Sellers" EntitySet="Sellers" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_SellerNewProduct" Association="Self.FK_Product_SellerNewProduct">
+      <End Role="SellerNewProducts" EntitySet="SellerNewProducts" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_TemporarySell" Association="Self.FK_Product_TemporarySell">
+      <End Role="TemporarySells" EntitySet="TemporarySells" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

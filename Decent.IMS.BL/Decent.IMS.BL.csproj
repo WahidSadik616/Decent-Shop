@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{25A8097F-58DF-4ACC-90D6-75771E50CF80}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Decent.IMS.BL</RootNamespace>
+    <AssemblyName>Decent.IMS.BL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CompanyListsBL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DepartmentBL.cs" />
+    <Compile Include="ProductBL.cs" />
+    <Compile Include="ProductCategoryBL.cs" />
+    <Compile Include="SalesmanBL.cs" />
+    <Compile Include="DaySellBL.cs" />
+    <Compile Include="DayIncomeBL.cs" />
+    <Compile Include="DayCostBL.cs" />
+    <Compile Include="SellerNewProductBL.cs" />
+    <Compile Include="SellerBL.cs" />
+    <Compile Include="SupplierPaymentDetailsBL.cs" />
+    <Compile Include="DayPaymentBL.cs" />
+    <Compile Include="CustomerBL.cs" />
+    <Compile Include="TemporarySellBL.cs" />
+    <Compile Include="SellDetailsBL.cs" />
+    <Compile Include="CustomerPaymentDetailsBL.cs" />
+    <Compile Include="CustomerDaySellBL.cs" />
+    <Compile Include="SalesmanPaymentBL.cs" />
+    <Compile Include="CostDetailsBL.cs" />
+    <Compile Include="CashMemoBL.cs" />
+    <Compile Include="UserInfoBL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Decent.IMS.Data\Decent.IMS.Data.csproj">
+      <Project>{89303699-5925-40e6-8632-c0e44988de1c}</Project>
+      <Name>Decent.IMS.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Decent.IMS.Framework\Decent.IMS.Framework.csproj">
+      <Project>{353b9965-4c77-43eb-8250-9a7f136c0cce}</Project>
+      <Name>Decent.IMS.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

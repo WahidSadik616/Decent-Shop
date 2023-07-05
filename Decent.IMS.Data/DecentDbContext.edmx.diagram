@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c1bdf629f0004a438acf79139e238b69" Name="Diagram1">
+        <EntityTypeShape EntityType="DecentDbModel.CashMemo" Width="1.5" PointX="0.75" PointY="5.75" />
+        <EntityTypeShape EntityType="DecentDbModel.CompanyList" Width="1.5" PointX="5.75" PointY="5.75" />
+        <EntityTypeShape EntityType="DecentDbModel.CostDetail" Width="1.5" PointX="7.75" PointY="5.75" />
+        <EntityTypeShape EntityType="DecentDbModel.CustomerDaySell" Width="1.5" PointX="5.75" PointY="8.75" />
+        <EntityTypeShape EntityType="DecentDbModel.CustomerPaymentDetail" Width="1.5" PointX="0.75" PointY="1.625" />
+        <EntityTypeShape EntityType="DecentDbModel.Customer" Width="1.5" PointX="3" PointY="1.25" />
+        <EntityTypeShape EntityType="DecentDbModel.DayCost" Width="1.5" PointX="1.5" PointY="26.625" />
+        <EntityTypeShape EntityType="DecentDbModel.DayIncome" Width="1.5" PointX="0.75" PointY="16.5" />
+        <EntityTypeShape EntityType="DecentDbModel.DayPayment" Width="1.5" PointX="7.75" PointY="8.75" />
+        <EntityTypeShape EntityType="DecentDbModel.DaySell" Width="1.5" PointX="3" PointY="16.25" />
+        <EntityTypeShape EntityType="DecentDbModel.Department" Width="1.5" PointX="5.75" PointY="1.75" />
+        <EntityTypeShape EntityType="DecentDbModel.PaymentDetail" Width="1.5" PointX="0.75" PointY="35.375" />
+        <EntityTypeShape EntityType="DecentDbModel.ProductCategory" Width="1.5" PointX="0.75" PointY="9.875" />
+        <EntityTypeShape EntityType="DecentDbModel.Product" Width="1.5" PointX="5.25" PointY="15.25" />
+        <EntityTypeShape EntityType="DecentDbModel.SalesmanPayment" Width="1.5" PointX="9.75" PointY="5.75" />
+        <EntityTypeShape EntityType="DecentDbModel.Salesman" Width="1.5" PointX="1.5" PointY="30.125" />
+        <EntityTypeShape EntityType="DecentDbModel.SellDetail" Width="1.5" PointX="3" PointY="5.875" />
+        <EntityTypeShape EntityType="DecentDbModel.SellerNewProduct" Width="1.5" PointX="3" PointY="21.375" />
+        <EntityTypeShape EntityType="DecentDbModel.Seller" Width="1.5" PointX="3" PointY="35.125" />
+        <EntityTypeShape EntityType="DecentDbModel.TemporarySell" Width="1.5" PointX="3" PointY="11.75" />
+        <EntityTypeShape EntityType="DecentDbModel.UserInfo" Width="1.5" PointX="8" PointY="1" />
+        <AssociationConnector Association="DecentDbModel.FK_SellDetails_CashMemo" />
+        <AssociationConnector Association="DecentDbModel.FK_Customer_CustomerPaymentDetails" />
+        <AssociationConnector Association="DecentDbModel.FK_Product_Customer" />
+        <AssociationConnector Association="DecentDbModel.FK_DayCost_Salesman" />
+        <AssociationConnector Association="DecentDbModel.FK_DayIncome_DayCost" />
+        <AssociationConnector Association="DecentDbModel.FK_Salesman_DayCost" />
+        <AssociationConnector Association="DecentDbModel.FK_DaySell_DayIncome" />
+        <AssociationConnector Association="DecentDbModel.FK_Product_DaySell" />
+        <AssociationConnector Association="DecentDbModel.FK_UserInfo_Department" />
+        <AssociationConnector Association="DecentDbModel.FK_Seller_PaymentDetails" />
+        <AssociationConnector Association="DecentDbModel.FK_Product_ProductCategory" />
+        <AssociationConnector Association="DecentDbModel.FK_SellDetails_ProductCategory" />
+        <AssociationConnector Association="DecentDbModel.FK_Seller_ProductCategory" />
+        <AssociationConnector Association="DecentDbModel.FK_TemporarySell_ProductCategory" />
+        <AssociationConnector Association="DecentDbModel.FK_Product_Salesman" />
+        <AssociationConnector Association="DecentDbModel.FK_Product_Seller" />
+        <AssociationConnector Association="DecentDbModel.FK_Product_SellerNewProduct" />
+        <AssociationConnector Association="DecentDbModel.FK_Product_TemporarySell" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

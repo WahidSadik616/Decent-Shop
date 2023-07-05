@@ -1,0 +1,28 @@
+OtherUserAddProductManager
+2.Auto Search
+3.capital to small letter search
+
+
+1.Product exchange
+
+2.Advance Payment
+
+
+Cash Memo Print
+1. auto export in pdf file
+2. after printing,go to the previous page
+3.Print e time,discount,due, 
+Prev. Balance
+Net Total132
+Amount Paid132
+Balance
+
+
+Salesman salary auto update:
+4. Condition By date 
+
+
+
+
+
+
